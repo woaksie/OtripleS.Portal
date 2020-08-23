@@ -3,10 +3,13 @@
 // FREE TO USE AS LONG AS SOFTWARE FUNDS ARE DONATED TO THE POOR
 // ---------------------------------------------------------------
 
-namespace OtripleS.Portal.Web.Brokers.API
-{
-    public partial interface IApiBroker
-    {
+using System;
 
+namespace OtripleS.Portal.Web.Models.Students.Exceptions
+{
+    public class NullStudentException : Exception
+    {
+        public NullStudentException()
+            : base("Null student error occurred.") { }
     }
 }
